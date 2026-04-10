@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurèle Grand Hotel — A sanctuary of luxury and timeless elegance. Experience world-class hospitality, exquisite suites, fine dining, and bespoke services in the heart of the city." />
+  <meta name="keywords" content="luxury hotel, boutique hotel, five star hotel, spa resort, fine dining, suite, presidential suite, hotel booking" />
+  <meta name="author" content="Aurèle Grand Hotel" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aurèle Grand Hotel — Timeless Luxury" />
+  <meta property="og:description" content="A sanctuary of luxury and timeless elegance in the heart of the city." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200" />
+  <meta property="og:url" content="https://aurelegrandhotel.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title>Aurèle Grand Hotel — Timeless Luxury</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+
+  <!-- Loading Screen -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">A</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Dark Mode Toggle -->
+  <button id="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <span class="icon-sun">☀</span>
+    <span class="icon-moon">☾</span>
+  </button>
+
+  <!-- Back To Top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <nav aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Aurèle Grand Hotel Home">
+        <span class="logo-a">A</span>urèle
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#booking" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════
+         HERO
+    ════════════════════════════════ -->
+    <section id="hero" aria-label="Hero — Welcome to Aurèle Grand Hotel">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&q=85"
+          alt="Aurèle Grand Hotel — Grand lobby interior"
+          class="hero-img"
+          fetchpriority="high"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-up">Est. 1921 · Paris</p>
+        <h1 class="hero-title reveal-up" style="--delay:.15s">
+          Where Luxury<br /><em>Becomes Legend</em>
+        </h1>
+        <p class="hero-sub reveal-up" style="--delay:.3s">
+          An intimate sanctuary of refinement,<br />curated for those who demand the extraordinary.
+        </p>
+        <a href="#booking" class="btn-gold reveal-up" style="--delay:.45s">Reserve Your Suite</a>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"><div class="scroll-dot"></div></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         ABOUT
+    ════════════════════════════════ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-images">
+          <img
+            src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80"
+            alt="Aurèle Grand Hotel — Elegant guest room interior"
+            class="about-img-main lazy"
+            loading="lazy"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&q=80"
+            alt="Aurèle Grand Hotel — Champagne on ice in suite"
+            class="about-img-accent lazy"
+            loading="lazy"
+          />
+          <div class="about-badge">
+            <span class="badge-num">100+</span>
+            <span class="badge-text">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 id="about-heading">A Century of<br /><em>Timeless Elegance</em></h2>
+          <p>Founded in 1921 by the visionary architect Édouard Aurèle, our hotel has long been the preferred address of royalty, artists, diplomats, and discerning travellers who seek more than accommodation — they seek an experience.</p>
+          <p>Every corridor, every suite, every detail has been meticulously designed to transport you into a world where time slows, beauty reigns, and service is an art form.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">87</span>
+              <span class="stat-label">Unique Suites</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5★</span>
+              <span class="stat-label">Global Rating</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">12</span>
+              <span class="stat-label">Awards Won</span>
+            </div>
+          </div>
+          <a href="#booking" class="btn-outline">Discover Our World</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         ROOMS
+    ════════════════════════════════ -->
+    <section id="rooms" aria-labelledby="rooms-heading" class="bg-light">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Accommodations</p>
+          <h2 id="rooms-heading">Your Private <em>Sanctuary</em></h2>
+          <p class="section-sub">Each of our 87 rooms and suites is a masterwork of design, comfort, and discretion.</p>
+        </div>
+        <div class="rooms-grid">
+
+          <article class="room-card" aria-label="Classic Room">
+            <div class="room-img-wrap">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+                   alt="Aurèle Classic Room — King bed with city view"
+                   class="lazy" loading="lazy" />
+              <div class="room-badge">Most Popular</div>
+            </div>
+            <div class="room-info">
+              <h3>Classic Room</h3>
+              <p>A refined haven of calm, dressed in soft linens and warm wood tones with a private terrace overlooking the gardens.</p>
+              <ul class="room-features" aria-label="Room features">
+                <li title="Free WiFi">📶 WiFi</li>
+                <li title="Air Conditioning">❄ A/C</li>
+                <li title="Breakfast Included">🥐 Breakfast</li>
+                <li title="City View">🏙 City View</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-from">from</span>
+                  <span class="price-num">€280</span>
+                  <span class="price-night">/night</span>
+                </div>
+                <a href="#booking" class="btn-gold-sm" data-room="Classic Room">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card" aria-label="Deluxe Suite">
+            <div class="room-img-wrap">
+              <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&q=80"
+                   alt="Aurèle Deluxe Suite — Spacious living area with gold accents"
+                   class="lazy" loading="lazy" />
+            </div>
+            <div class="room-info">
+              <h3>Deluxe Suite</h3>
+              <p>Expansive living spaces adorned with bespoke art, marble bathrooms, and butler service — the definition of quiet opulence.</p>
+              <ul class="room-features" aria-label="Room features">
+                <li title="Free WiFi">📶 WiFi</li>
+                <li title="Air Conditioning">❄ A/C</li>
+                <li title="Breakfast Included">🥐 Breakfast</li>
+                <li title="Spa Access">🧖 Spa</li>
+                <li title="Butler Service">🛎 Butler</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-from">from</span>
+                  <span class="price-num">€580</span>
+                  <span class="price-night">/night</span>
+                </div>
+                <a href="#booking" class="btn-gold-sm" data-room="Deluxe Suite">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="room-card" aria-label="Presidential Suite">
+            <div class="room-img-wrap">
+              <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&q=80"
+                   alt="Aurèle Presidential Suite — Grand suite with panoramic views"
+                   class="lazy" loading="lazy" />
+              <div class="room-badge prestige">Presidential</div>
+            </div>
+            <div class="room-info">
+              <h3>Presidential Suite</h3>
+              <p>Our crown jewel — two floors of uncompromising luxury, private pool, personal chef, and panoramic views over the entire city.</p>
+              <ul class="room-features" aria-label="Room features">
+                <li title="Free WiFi">📶 WiFi</li>
+                <li title="Air Conditioning">❄ A/C</li>
+                <li title="Breakfast Included">🥐 Breakfast</li>
+                <li title="Private Pool">🏊 Pool</li>
+                <li title="Private Chef">👨‍🍳 Chef</li>
+                <li title="Airport Transfer">🚗 Transfer</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price">
+                  <span class="price-from">from</span>
+                  <span class="price-num">€1,800</span>
+                  <span class="price-night">/night</span>
+                </div>
+                <a href="#booking" class="btn-gold-sm" data-room="Presidential Suite">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         BOOKING
+    ════════════════════════════════ -->
+    <section id="booking" aria-labelledby="booking-heading">
+      <div class="booking-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&q=70"
+             alt="" class="lazy" loading="lazy" />
+        <div class="booking-overlay"></div>
+      </div>
+      <div class="container booking-inner">
+        <div class="section-header light">
+          <p class="section-eyebrow">Reservations</p>
+          <h2 id="booking-heading">Begin Your <em>Journey</em></h2>
+        </div>
+        <form id="booking-form" novalidate aria-label="Hotel booking form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="b-name">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="b-name" name="name" placeholder="Your full name" required autocomplete="name" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="b-email">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="b-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="b-phone">Phone Number <span aria-hidden="true">*</span></label>
+              <input type="tel" id="b-phone" name="phone" placeholder="+1 (555) 000-0000" required autocomplete="tel" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="b-guests">Number of Guests <span aria-hidden="true">*</span></label>
+              <select id="b-guests" name="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+              </select>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="b-checkin">Check-in Date <span aria-hidden="true">*</span></label>
+              <input type="date" id="b-checkin" name="checkin" required />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="b-checkout">Check-out Date <span aria-hidden="true">*</span></label>
+              <input type="date" id="b-checkout" name="checkout" required />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group full-width">
+              <label for="b-room">Room Type <span aria-hidden="true">*</span></label>
+              <select id="b-room" name="room" required>
+                <option value="">Select room type</option>
+                <option value="Classic Room">Classic Room — from €280/night</option>
+                <option value="Deluxe Suite">Deluxe Suite — from €580/night</option>
+                <option value="Presidential Suite">Presidential Suite — from €1,800/night</option>
+              </select>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group full-width">
+              <label for="b-requests">Special Requests</label>
+              <textarea id="b-requests" name="requests" rows="3" placeholder="Any special requests, dietary requirements, or preferences..."></textarea>
+            </div>
+          </div>
+          <div class="availability-check" id="avail-check" aria-live="polite"></div>
+          <div class="form-actions">
+            <button type="button" id="check-avail" class="btn-outline-light">Check Availability</button>
+            <button type="submit" class="btn-gold">Confirm Reservation</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         AMENITIES
+    ════════════════════════════════ -->
+    <section id="amenities" aria-labelledby="amenities-heading" class="bg-light">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Experiences</p>
+          <h2 id="amenities-heading">World-Class <em>Amenities</em></h2>
+          <p class="section-sub">Every facet of Aurèle is designed to delight and restore.</p>
+        </div>
+        <div class="amenities-grid">
+          <article class="amenity-card" tabindex="0">
+            <div class="amenity-icon" aria-hidden="true">✦</div>
+            <h3>Spa & Wellness</h3>
+            <p>An 800 m² haven of serenity. Thermal pools, hammam, private treatment rooms, and a curated menu of rituals from around the world.</p>
+          </article>
+          <article class="amenity-card" tabindex="0">
+            <div class="amenity-icon" aria-hidden="true">◈</div>
+            <h3>Infinity Pool</h3>
+            <p>Rooftop infinity pool overlooking the city skyline. Open year-round with heated water, private cabanas, and poolside cocktail service.</p>
+          </article>
+          <article class="amenity-card" tabindex="0">
+            <div class="amenity-icon" aria-hidden="true">◉</div>
+            <h3>Fine Dining</h3>
+            <p>Three Michelin-starred restaurant helmed by Chef Mathieu Leclair. A gastronomic journey through France's finest seasonal ingredients.</p>
+          </article>
+          <article class="amenity-card" tabindex="0">
+            <div class="amenity-icon" aria-hidden="true">▲</div>
+            <h3>Fitness Centre</h3>
+            <p>State-of-the-art equipment, personal trainers, and daily yoga classes. Open 24 hours for guests who never stop moving.</p>
+          </article>
+          <article class="amenity-card" tabindex="0">
+            <div class="amenity-icon" aria-hidden="true">◆</div>
+            <h3>Concierge</h3>
+            <p>Your personal concierge anticipates every desire — from private gallery tours to helicopter transfers and last-minute opera tickets.</p>
+          </article>
+          <article class="amenity-card" tabindex="0">
+            <div class="amenity-icon" aria-hidden="true">❋</div>
+            <h3>Private Events</h3>
+            <p>Five exclusive event spaces for weddings, galas, and corporate gatherings. Our dedicated team crafts unforgettable experiences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         GALLERY
+    ════════════════════════════════ -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Gallery</p>
+          <h2 id="gallery-heading">A Visual <em>Story</em></h2>
+        </div>
+        <div class="gallery-grid" role="list" aria-label="Hotel photo gallery">
+          <div class="gallery-item" role="listitem" tabindex="0" data-src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1400&q=85" data-caption="Grand Lobby">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=75" alt="Aurèle Grand Hotel — Opulent lobby with chandelier" class="lazy" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1400&q=85" data-caption="Rooftop Pool">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=75" alt="Aurèle Grand Hotel — Rooftop infinity pool at sunset" class="lazy" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item tall" role="listitem" tabindex="0" data-src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1400&q=85" data-caption="Presidential Suite">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=75" alt="Aurèle Grand Hotel — Presidential Suite master bedroom" class="lazy" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400&q=85" data-caption="Fine Dining">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=75" alt="Aurèle Grand Hotel — Fine dining restaurant" class="lazy" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item" role="listitem" tabindex="0" data-src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1400&q=85" data-caption="Spa & Wellness">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=75" alt="Aurèle Grand Hotel — Luxurious spa treatment room" class="lazy" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+          <div class="gallery-item wide" role="listitem" tabindex="0" data-src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1400&q=85" data-caption="Garden Terrace">
+            <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&q=75" alt="Aurèle Grand Hotel — Garden terrace at dusk" class="lazy" loading="lazy" />
+            <div class="gallery-overlay"><span>View</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+      <button class="lb-close" id="lb-close" aria-label="Close lightbox">✕</button>
+      <button class="lb-prev" id="lb-prev" aria-label="Previous image">‹</button>
+      <button class="lb-next" id="lb-next" aria-label="Next image">›</button>
+      <div class="lb-content">
+        <img id="lb-img" src="" alt="" />
+        <p id="lb-caption"></p>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════ -->
+    <section id="testimonials" aria-labelledby="testi-heading" class="bg-light">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Guest Reviews</p>
+          <h2 id="testi-heading">Voices of <em>Our Guests</em></h2>
+        </div>
+        <div class="testimonial-slider" role="region" aria-label="Guest testimonials">
+          <div class="testi-track" id="testi-track">
+
+            <article class="testi-slide" aria-label="Testimonial from Isabelle Laurent">
+              <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                <p>"Aurèle is not a hotel — it is an emotion. From the moment I stepped through those gilded doors, I understood why every great writer and artist once called this place home. Perfection, without effort."</p>
+              </blockquote>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b7c9?w=100&q=80"
+                     alt="Portrait of Isabelle Laurent, guest reviewer" class="lazy" loading="lazy" />
+                <div>
+                  <strong>Isabelle Laurent</strong>
+                  <span>Fashion Director, Paris</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-slide" aria-label="Testimonial from James Whitmore">
+              <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                <p>"We stayed in the Presidential Suite for our anniversary. The private chef prepared a seven-course dinner in our suite. I have stayed at every great hotel in the world — Aurèle stands alone. Simply magnificent."</p>
+              </blockquote>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                     alt="Portrait of James Whitmore, guest reviewer" class="lazy" loading="lazy" />
+                <div>
+                  <strong>James Whitmore</strong>
+                  <span>CEO, London</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testi-slide" aria-label="Testimonial from Sofia Marchetti">
+              <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>
+                <p>"The spa alone is worth the flight. The thermal ritual, the staff — every detail speaks of an obsession with excellence. Aurèle has permanently ruined all other hotels for me, and I could not be more grateful."</p>
+              </blockquote>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
+                     alt="Portrait of Sofia Marchetti, guest reviewer" class="lazy" loading="lazy" />
+                <div>
+                  <strong>Sofia Marchetti</strong>
+                  <span>Interior Designer, Milan</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <div class="testi-controls" aria-label="Testimonial navigation">
+            <button class="testi-btn" id="testi-prev" aria-label="Previous testimonial">‹</button>
+            <div class="testi-dots" id="testi-dots" role="tablist" aria-label="Testimonial pages">
+              <button class="dot active" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+              <button class="dot" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+              <button class="dot" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="testi-btn" id="testi-next" aria-label="Next testimonial">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════
+         CONTACT
+    ════════════════════════════════ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="section-eyebrow">Contact Us</p>
+          <h2 id="contact-heading">We Are <em>At Your Service</em></h2>
+          <address>
+            <div class="contact-item">
+              <span class="c-icon" aria-hidden="true">◎</span>
+              <div>
+                <strong>Address</strong>
+                <p>12 Rue de la Paix, 75001 Paris, France</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="c-icon" aria-hidden="true">◎</span>
+              <div>
+                <strong>Reservations</strong>
+                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="c-icon" aria-hidden="true">◎</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:concierge@aurelegrand.com">concierge@aurelegrand.com</a>
+              </div>
+            </div>
+          </address>
+          <div class="map-wrap">
+            <iframe
+              title="Aurèle Grand Hotel location on Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9915523184185!2d2.3308609!3d48.8698444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e17a0355085%3A0x4fbbfcfc34de8753!2sRue%20de%20la%20Paix%2C%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="c-name">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="c-name" name="name" placeholder="Your name" required autocomplete="name" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="c-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="c-subject">Subject</label>
+              <input type="text" id="c-subject" name="subject" placeholder="How can we help?" />
+            </div>
+            <div class="form-group">
+              <label for="c-message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="c-message" name="message" rows="5" placeholder="Your message..." required></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn-gold">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-a">A</span>urèle</div>
+        <p>A sanctuary of luxury and timeless elegance since 1921. Crafting moments that outlast a lifetime.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="Aurèle on Instagram" rel="noopener noreferrer">IG</a>
+          <a href="#" aria-label="Aurèle on Facebook" rel="noopener noreferrer">FB</a>
+          <a href="#" aria-label="Aurèle on Twitter/X" rel="noopener noreferrer">X</a>
+          <a href="#" aria-label="Aurèle on LinkedIn" rel="noopener noreferrer">LI</a>
+        </div>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h4>Hotel</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#rooms">Accommodations</a></li>
+            <li><a href="#amenities">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Concierge</a></li>
+            <li><a href="#">Spa & Wellness</a></li>
+            <li><a href="#">Private Events</a></li>
+            <li><a href="#">Corporate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-newsletter">
+        <h4>Exclusive Offers</h4>
+        <p>Subscribe for curated experiences and priority access.</p>
+        <form id="newsletter-form" novalidate aria-label="Newsletter subscription form">
+          <div class="newsletter-input-wrap">
+            <input type="email" id="nl-email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email for newsletter" />
+            <button type="submit" aria-label="Subscribe to newsletter">→</button>
+          </div>
+          <span class="form-error" id="nl-error" role="alert"></span>
+          <span class="nl-success" id="nl-success" aria-live="polite"></span>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© <span id="year"></span> Aurèle Grand Hotel. All rights reserved.</p>
+      <p class="footer-tagline">Crafted with passion in Paris, France</p>
+    </div>
+  </footer>
+
+  <!-- Booking Confirmation Modal -->
+  <div id="booking-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close confirmation">✕</button>
+      <div class="modal-icon" aria-hidden="true">✦</div>
+      <h3 id="modal-title">Reservation Confirmed</h3>
+      <p id="modal-body">Thank you for choosing Aurèle Grand Hotel. Your reservation has been received.</p>
+      <div id="modal-details" class="modal-details"></div>
+      <button class="btn-gold" id="modal-ok">Perfect, Thank You</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

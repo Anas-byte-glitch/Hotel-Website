@@ -1,2 +1,2 @@
 # Hotel-Website
-Modern hotel booking website built with HTML CSS and JavaScript.
+Modern and responsive hotel website built with HTML, CSS, and JavaScript. Designed to showcase rooms, pricing, and booking experience with a clean UI. This project focuses on front-end performance and user experience, with plans to integrate a full booking system and backend functionality for real-world use.
